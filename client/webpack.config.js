@@ -63,6 +63,7 @@ module.exports = () => {
             options: {
               presets: 
                 ['@babel/preset-env'],
+                // Jerrod helped with the plugins below
                 plugins: ['@babel/plugin-proposal-class-properties', '@babel/transform-runtime'],
             },
           },
