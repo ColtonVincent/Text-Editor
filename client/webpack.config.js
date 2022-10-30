@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: ''
+        title: 'jate'
       }),
       // copied from mini project of pwa
       new InjectManifest({
@@ -63,7 +63,7 @@ module.exports = () => {
             options: {
               presets: 
                 ['@babel/preset-env'],
-                plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+                plugins: ['@babel/plugin-proposal-class-properties', '@babel/transform-runtime'],
             },
           },
         }, 

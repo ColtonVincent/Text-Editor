@@ -28,13 +28,14 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
 registerRoute(
-  ({request}) => ['style', 'script', 'worker' ].includes(request.destination),
+  // Jerrod helped with the request.destinations.
+  ({request}) => request.destination === 'style' || request.destination === 'script' || request.destination === 'worker',
   // Jerrod pointed out using CacheFirt first 
   new CacheFirst({
     cacheName: 'asset-cache',
     plugins: [
       new offlineFallback({
-        pageFallback: '/index.html'
+        pageFallback: '/index.html',
       }),
     ],
   })
