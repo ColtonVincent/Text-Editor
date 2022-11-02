@@ -8,6 +8,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
+  - [live site](#live-site)
 
 
   ## Installation
@@ -24,4 +25,8 @@
   
   ## live site
   
-  
+  [heroku deployed site](https://jate2000cv.herokuapp.com/)
+
+  ## screenshot of deployed site
+
+  ![image of live site](Screenshot%20(17).png)
